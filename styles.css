@@ -1,31 +1,99 @@
-.flexContainer{
+*{
+    margin: 0;
+}
+
+
+:root{
+    font-size: 40px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
 }
 
-.orange{
+.flexItem {
+    flex: 1;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.orange {
     background-color: orange;
 }
 
-.blue{
+.blue {
     background-color: blue;
 }
 
-.red{
+.red {
     background-color: red;
 }
 
-.green{
+.green {
     background-color: green;
 }
 
-.purple{
+.purple {
     background-color: purple;
 }
 
-.gray{
-    background-color: orange;
+.gray {
+    background-color: rgb(78, 76, 76);
 }
 
-.orange{
-    background-color: grey;
+.navContainer{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.head,nav{
+    height: 40px;
+    padding: 20px;
+}
+
+.imageContainer{
+    position: relative;
+    width: 500px;
+}
+
+.imageContainer img {
+    width: 100%;
+    padding: 200px;
+    /* padding-left: 100x;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px; */
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.layoutContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer{
+    font-size:20px;
+}
+
+.emText{
+    font: size 1.5rem;
+}
+
+@media screen and (max-width: 700px){
+    :root{
+        font-size: 40px;
+    }
 }
